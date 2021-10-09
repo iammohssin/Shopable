@@ -1,0 +1,4 @@
+1- npm init -y //i executed this command to creat package json file.
+2- npm i express // i used this command to install express.
+3- node -v // to check node version
+4- npm i mongoose // to install mongo
