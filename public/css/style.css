@@ -217,7 +217,9 @@ label {
 /* contact us starts here  */
 
 .contact-style {
-    margin: 10rem 0;
+
+    margin: 75px auto;
+    width: 630px;
 }
 
 label {
@@ -240,17 +242,6 @@ label {
     font-weight: 600;
 }
 
-/* footer sections ends  */
-
-footer {
-    background: rgb(221, 217, 217);
-}
-
-footer p {
-    padding: 1rem 0;
-    margin: 0;
-    text-align: center;
-}
 
 /* media queries part starts here  */
 
@@ -281,5 +272,110 @@ footer p {
     .service-style .sub-heading,
     .contact-style .sub-heading {
         font-size: 2rem;
+    }
+}
+.card{
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    padding-left: 50px;
+}
+.product-btn{
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    background: green;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+/*footer css*/
+.site-footer
+{
+    background-color:white;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:black;
+}
+.site-footer hr
+{
+    border-top-color:black;
+    opacity:0.5
+}
+.site-footer hr.small
+{
+    margin:20px 0
+}
+.site-footer h6
+{
+    color:black;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+.site-footer a
+{
+    color:black;
+}
+.site-footer a:hover
+{
+    color:green;
+    text-decoration:none;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.footer-links li
+{
+    display:block
+}
+.footer-links a
+{
+    color:black;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:green;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display:inline-block
+}
+
+.copyright-text
+{
+    margin-left: 50%;
+}
+@media (max-width:991px)
+{
+    .site-footer [class^=col-]
+    {
+        margin-bottom:30px
+    }
+}
+@media (max-width:767px)
+{
+    .site-footer
+    {
+        padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+        text-align:center
     }
 }
