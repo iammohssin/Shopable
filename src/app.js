@@ -17,12 +17,18 @@ app.use('/jq', express.static(path.join(__dirname,"../node_modules/jquery/dist" 
 app.use(express.static(staticpath))
 app.set("view engine", "hbs");
 app.set("views", templatepath);
-hbs.registerPartial(partialpath);
+hbs.registerPartials(partialpath);
 
 //routing
 
-app.get("/",(req,res)=>{
+app.get("/index",(req,res)=>{
     res.render("index");
+})
+app.get("/contact",(req,res)=>{
+    res.render("contact");
+})
+app.get("/products",(req,res)=>{
+    res.render("products");
 })
 
 //server create
