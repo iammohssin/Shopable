@@ -27,8 +27,7 @@ h2 {
 h3 {
     font-size: 3rem;
 }
-
-.row {
+.row{
     margin: 0;
 }
 
@@ -275,9 +274,61 @@ label {
     }
 }
 .card{
-    margin-right: 60px;
-    margin-bottom: 20px;
+    margin: 5px;
+    position: relative;
+    color: white;
+    width: 320px;
+    height: 420px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
 }
+.card::before{
+    content: '';
+    position: absolute;
+    top:-50%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card::after{
+    content: 'Shopable';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color:rgba(0,0,0,0.1);
+}
+.card-img-top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .card-img-top {
+     max-width: 100%;
+    transition: 0.5s;
+}
+.card:hover .card-img-top{
+    max-width: 50%;
+}
+.card-text .card-title{
+    position: relative;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
 .row{
     display: flex;
     padding-left: 50px;

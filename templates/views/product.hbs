@@ -13,71 +13,36 @@
 {{>navbar}}
 
 <div class="container-fluid mt-5 about-style" id="productsid">
+
     <div class="row">
         <div class="col-md-10 col-12 mx-auto">
             <h1 class="text-center main-heading">Our Products</h1>
             <p class="text-center sub-heading-heading">Women clothing collection</p>
             <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Some quick example text to build on the card </p>
-                    </div>
-                    <div class="card-body">
-                        <button href="#" class="product-btn">Add to cart</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Some quick example text to build on the card </p>
-                    </div>
-                    <div class="card-body">
-                        <button href="#" class="product-btn">Add to cart</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Some quick example text to build on the card </p>
-                    </div>
-                    <div class="card-body">
-                        <button href="#" class="product-btn">Add to cart</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Some quick example text to build on the card </p>
-                    </div>
-                    <div class="card-body">
-                        <button href="#" class="product-btn">Add to cart</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Some quick example text to build on the card </p>
-                    </div>
-                    <div class="card-body">
-                        <button href="#" class="product-btn">Add to cart</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product</h5>
-                        <p class="card-text">Some quick example text to build on the card </p>
-                    </div>
-                    <div class="card-body">
-                        <button href="#" class="product-btn">Add to cart</button>
-                    </div>
-                </div>
+                {{#if products}}
+                    <ul>
+                        {{#each products}}
+                            <!--                <li class={{this.desc}}>{{this.price}}</li>-->
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                {{#if products}}
+                        {{#each products}}
+                            <div class="card" style="width: 31rem;">
+                                <img src="{{this.image}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.productName}}</h5>
+                                    <p class="card-text"> {{this.desc}} </p>
+                                    <p class="card-text"> Price: {{this.price}} </p>
+<!--                                    <p class="card-text"> {{this.createdAt}} </p>-->
+
+                                </div>
+                                <div class="card-body">
+                                    <button href="#" class="product-btn">Add to cart</button>
+                                </div>
+                            </div>
+                        {{/each}}
+                {{/if}}
             </div>
         </div>
     </div>
