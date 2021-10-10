@@ -61,7 +61,9 @@ h3 {
 }
 
 /* our hero sections  */
-
+.hero-img{
+    margin-left: 360px;
+}
 .hero-text h1 {
     font-size: 5.5rem;
     line-height: 1.5;
@@ -74,7 +76,7 @@ h3 {
 
 .hero-text h1:nth-child(2) {
     font-weight: bold;
-    color: #5222d0;
+    color: green;
 }
 
 .hero-text p,
