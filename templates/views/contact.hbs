@@ -10,24 +10,24 @@
 </head>
 <body>
 {{>navbar}}
-<form class="contact-style">
+<form class="contact-style" action="/contact" method="POST">
     <h2>Contact Us</h2>
     <div class="mb-3">
         <label for="exampleInputName" class="form-label">Name</label>
-        <input type="text" class="form-control" id="exampleInputName">
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Name" name="name">
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
         <label for="exampleInputMobile" class="form-label">Mobile</label>
-        <input type="text" class="form-control" id="exampleInputMobile">
+        <input type="text" class="form-control" id="exampleInputMobile" placeholder="Mobile" name="mobile">
     </div>
     <div class="mb-3">
         <label for="exampleInputMessage" class="form-label">Message</label>
-        <input type="text" class="form-control" id="exampleInputMessage">
+        <input type="text" class="form-control" id="exampleInputMessage" placeholder="Message" name="message">
     </div>
     <button type="submit" class="btn-style btn-primary">Submit</button>
 </form>

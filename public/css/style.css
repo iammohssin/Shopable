@@ -353,6 +353,7 @@ label {
 /*footer css*/
 .site-footer
 {
+    font-family: "Poiret One";
     background-color:white;
     padding:45px 0 20px;
     font-size:15px;
@@ -370,6 +371,7 @@ label {
 }
 .site-footer h6
 {
+    font-family: "Poiret One";
     color:black;
     font-size:16px;
     text-transform:uppercase;
@@ -387,6 +389,7 @@ label {
 }
 .footer-links
 {
+    font-family: "Poiret One";
     padding-left:0;
     list-style:none
 }
