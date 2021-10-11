@@ -16,7 +16,7 @@ const userSchema = mongoose.Schema({
             }
         }
     },
-    phone:{
+    mobile:{
         type:Number,
         required:true,
         min: 9

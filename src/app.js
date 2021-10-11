@@ -47,10 +47,13 @@ app.post('/products', async (req, res) => {
    const product = await Product.create(req.body);
    res.json(product);
 });
-app.post("/contact",async (req,res) =>{
+app.post("/contact",async (req, res) =>{
     try{
         // res.send(req.body)
+
+        // console.log(req.body);
         const userData = new User(req.body);
+
       await userData.save();
       res.status(201).render("index");
     }catch (error) {
