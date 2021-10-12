@@ -24,8 +24,9 @@ hbs.registerPartials(partialpath);
 
 //routing
 
-app.get("/index",(req,res)=>{
-    res.render("index");
+app.get("/index",async (req,res)=>{
+    const newarival = await newarivals.find({});
+    res.render("index", {newarivals: newarival});
 })
 app.get("/contact",(req,res)=>{
     res.render("contact");
