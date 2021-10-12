@@ -4,6 +4,7 @@ require("./db/conn");
 const User = require('./models/usermessage')
 const hbs = require("hbs");
 const Product = require('./models/products');
+const newarivals = require('./models/newarival')
 const bodyParser = require('body-parser')
 const app = express();
 const port = process.env.PORT || 3000;
@@ -41,12 +42,16 @@ app.get('/products', async (req, res) => {
     const products = await Product.find({});
     res.json(products);
 });
-
 app.post('/products', async (req, res) => {
     console.log(req.body);
    const product = await Product.create(req.body);
    res.json(product);
 });
+app.post('/newarival',async (req, res)=>{
+    console.log(req.body);
+    const newarival= await newarivals.create(req.body);
+    res.json(newarival);
+})
 app.post("/contact",async (req, res) =>{
     try{
         // res.send(req.body)

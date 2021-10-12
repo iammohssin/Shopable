@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-
 * {
     font-family: "Poiret One", cursive;
     font-weight: bold;
@@ -274,22 +273,20 @@ label {
     }
 }
 .card{
-    margin: 5px;
+    margin: 8px;
     position: relative;
-    color: white;
+    color: black;
     width: 320px;
     height: 420px;
-    background: #122936;
+    background: whitesmoke;
     border-radius: 20px;
     overflow: hidden;
 }
 .card::before{
     content: '';
     position: absolute;
-    top:-50%;
     width: 100%;
     height: 100%;
-
 }
 
 .card::after{
@@ -298,24 +295,26 @@ label {
     bottom: 0;
     left: 0;
     font-weight: 600;
-    font-size: 8em;
+    font-size: 7em;
     color:rgba(0,0,0,0.1);
 }
 .card-img-top {
     position: relative;
     width: 100%;
     display: flex;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 5px;
     z-index: 1;
 }
 .card .card-img-top {
-     max-width: 100%;
-    transition: 0.5s;
+     max-width: 50%;
+    transition: 1s;
 }
 .card:hover .card-img-top{
-    max-width: 50%;
+
+    max-width: 100%;
 }
 .card-text .card-title{
     position: relative;
@@ -349,29 +348,25 @@ label {
     -ms-transition: 0.5s all;
     transition: 0.5s all;
 }
+/*New arival cards css start*/
+
+
+/*new arival css end*/
 
 /*footer css*/
+.footer-font{
+    text-decoration: none;
+    font-family: "Poiret One";
+}
 .site-footer
 {
-    font-family: "Poiret One";
-    background-color:white;
     padding:45px 0 20px;
     font-size:15px;
-    line-height:24px;
     color:black;
 }
-.site-footer hr
-{
-    border-top-color:black;
-    opacity:0.5
-}
-.site-footer hr.small
-{
-    margin:20px 0
-}
+
 .site-footer h6
 {
-    font-family: "Poiret One";
     color:black;
     font-size:16px;
     text-transform:uppercase;
@@ -380,6 +375,7 @@ label {
 }
 .site-footer a
 {
+    text-decoration: none;
     color:black;
 }
 .site-footer a:hover
@@ -390,7 +386,7 @@ label {
 .footer-links
 {
     font-family: "Poiret One";
-    padding-left:0;
+    padding-left:0px;
     list-style:none
 }
 .footer-links li

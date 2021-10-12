@@ -1,0 +1,32 @@
+<div class="container-fluid mt-5 about-style" id="productsid">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <h1 class="text-center main-heading">New Arivals</h1>
+            <div class="row">
+                <hr>
+                {{#if newarivals}}
+                    <ul>
+                        {{#each newarivals}}
+                            <!--<li class={{this.desc}}>{{this.price}}</li>-->
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                {{#if newarivals}}
+                    {{#each newarivals}}
+                        <div class="card" style="width: 34rem;">
+                            <img src="{{this.image}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{this.productName}}</h5>
+                                <p class="card-text"> {{this.desc}} </p>
+                                <p class="card-text"> Price: {{this.price}} </p>
+                            </div>
+                            <div class="card-body">
+                                <button href="#" class="product-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    {{/each}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
